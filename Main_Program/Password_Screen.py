@@ -1,6 +1,6 @@
 #Password Screen
 import os, time
-import Railway.Sounds.Sound
+import Railway-Reservation-System.Sounds.Sound
 def Password():
     os.system("cls")
     print("="*80)
@@ -16,7 +16,7 @@ def Password():
         print("\t\t\tWELCOME TO THE GREAT INDIAN SUBWAY !! \n")
         print("="*80)
         print("\n\n \t\t\tYou enetered Wrong Password.....\n")
-        Railway.Sounds.Sound.ADERROR()
+        Railway-Reservation-System.Sounds.Sound.ADERROR()
         time.sleep(0.5)
         a = input("\n\nEnter correct password : ")
         time.sleep(0.5)
@@ -25,6 +25,6 @@ def Password():
     else :
         print("_"*80)
         print("\n \t\t\t\tWelcome.....\n")
-        Railway.Sounds.Sound.WELCOME()
+        Railway-Reservation-System.Sounds.Sound.WELCOME()
         time.sleep(1)
     return a
